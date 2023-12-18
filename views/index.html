@@ -34,7 +34,7 @@
       <div class="container text-center" id="blocos">
         <div class="row">
           <div class="col">
-            CAMERAS
+            <h2>CAMERAS</h2>
             <div class="col-sm-6">
               <div class="card">
                 <div class="card-body">
@@ -51,7 +51,7 @@
           
           </div>
           <div class="col">
-            DRONE
+          DRONE
             <div class="col-sm-6">
               <div class="card">
                 <div class="card-body">
@@ -67,7 +67,7 @@
             R$ 50,00
           </div>
           <div class="col">
-            INTERNET
+            <strong>INTERNET</strong>
             <div class="col-sm-6">
               <div class="card">
                 <div class="card-body">
@@ -83,7 +83,7 @@
             R$ 50,00
           </div>
           <div class="col">
-            REPARO
+            <strong>REPARO</strong>
             <div class="col-sm-6">
               <div class="card">
                 <div class="card-body">
@@ -100,6 +100,10 @@
           </div>
         </div>
       </div> 
+
+      <footer>
+        BRAINSTORM 2023. TODOS OS DIREITOS RESERVADOS.
+      </footer>
       
 </body>
 
@@ -121,26 +125,45 @@
   }
 
   #blocos{
+    display:flex;
     width: 100%;
   }
 
   .row{
     margin: none;
-
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: initial;
   }
 
   .col{
-    height: 28rem;
+    height: 32rem;
     border: solid rgb(255, 255, 255) 0.5px; /* fazer a borda no formulario */
     border-radius: 5px; /* fazer a cantos no formulario */
     box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);/* fazer sonbreamento */
     justify-content: space-between;
-    margin: 20px;
+
+  }
+
+  .col:hover{
+    color: #fff;
+    background-color: rgb(12, 82, 129);
   }
 
   .col-sm-6{
     margin-top: 10%;
     width: 100%;
+  }
+
+  strong{
+  margin-top: 50px;
+  }
+
+  footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+
   }
 
 
