@@ -30,6 +30,7 @@
 
   h1 {
     margin-top: 5%;
+    margin-bottom: 5%;
     text-align: center;
   }
 
@@ -85,10 +86,10 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 0 20px 0 darkgrey;
-}
+/*   overflow: hidden;
+ */  border-radius: 10px;
+/*   box-shadow: 0 0 20px 0 darkgrey;
+ */}
 
 form {
   transition: .5s;
@@ -173,6 +174,12 @@ i {
   top: 190px;
 }
 
+#login{
+  border: solid rgb(255, 255, 255) 0.5px;
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+
 
 
 
@@ -189,13 +196,15 @@ i {
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Brainstorming</a>
+        <a class="navbar-brand" href="index.html">Brainstorming</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
           <form class="d-flex" role="search">
-            <button type="button" class="btn btn-light">Login</button>
-            <button type="button" class="btn btn-light">Doações</button>
+            
+            <a href=""><button type="button" class="btn btn-light">Doações</button></a>
+            <a href=""><button type="button" class="btn btn-light">Login</button></a>
+            <a href=""><button type="button" class="btn btn-light">Cadastro</button></a>
           </form>
         </div>
       </div>
@@ -273,31 +282,29 @@ i {
       </div>
     </div>
   </div>
-  <hr>
+  
 
 
 
 
-  <div class="container">
+  <div class="container" id="login">
     <div class="buttonsForm">
       <div class="btnColor"></div>
-      <button id="btnSignin">Sign in</button>
-      <button id="btnSignup">Sign up</button>
-    </div>
+      <button id="btnSignin">Login</button>
+<!--       <button id="btnSignup">Sign up</button>
+ -->    </div>
 
     <form id="signin">
       <input type="text" placeholder="Email" required />
-      <i class="fas fa-envelope iEmail"></i>
       <input type="password" placeholder="Password" required />
-      <i class="fas fa-lock iPassword"></i>
       <div class="divCheck">
         <input type="checkbox" />
-        <span>Remember Password</span>
+        <span>Relembrar Senha</span>
       </div>
-      <button type="submit">Sign in</button>
+      <button type="submit">Entrar</button>
     </form>
 
-    <form id="signup">
+    <!-- <form id="signup">
       <input type="text" placeholder="Email" required />
       <i class="fas fa-envelope iEmail"></i>
       <input type="password" placeholder="Password" required />
@@ -309,7 +316,7 @@ i {
         <span>Terms</span>
       </div>
       <button type="submit">Sign up</button>
-    </form>
+    </form> -->
   </div>
 
 
