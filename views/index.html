@@ -136,15 +136,13 @@ input[type="text"], input[type="password"] {
 }
 
 button[type="submit"] {
-  background: #660fc8;
   color: white;
-  border-radius: 30px;
+  border-radius: 5px;
   width: 100%;
   border: none;
   outline: none;
   padding: 8px 0 8px 15px;
   font-size: 15px;
-  margin-top: 40px;
   cursor: pointer;
 }
 
@@ -183,7 +181,7 @@ button[type="submit"] {
           <form class="d-flex" role="search">
             
             <a href=""><button type="button" class="btn btn-light">Doações</button></a>
-            <a href=""><button type="button" class="btn btn-light">Login</button></a>
+            <a href="/views/login.html"><button type="button" class="btn btn-light">Login</button></a>
             <a href="/views/cadastro.html"><button type="button" class="btn btn-light">Cadastro</button></a>
           </form>
         </div>
@@ -210,6 +208,9 @@ button[type="submit"] {
             </p>
             <hr>
             R$ 50,00
+            <br>
+            <button type="submit" class="btn btn-primary" id="assinar">Assinar</button>
+
         </div>
         
     </div>
@@ -229,6 +230,9 @@ button[type="submit"] {
         </p>
         <hr>
         R$ 50,00
+        <br>
+        <button type="submit" class="btn btn-primary" id="assinar">Assinar</button>
+
       </div>
       <div class="col" id="internet"  style="background-image: url('/imgs/rede.png');">
         <h2>INTERNET</h2>
@@ -245,6 +249,9 @@ button[type="submit"] {
         </p>
         <hr>
         R$ 50,00
+        <br>
+        <button type="submit" class="btn btn-primary" id="assinar">Assinar</button>
+
       </div>
       <div class="col"  id="reparo" style="background-image: url('/imgs/manutencao01.png');">
         <h2>REPARO</h2>
@@ -261,6 +268,9 @@ button[type="submit"] {
         </p>
         <hr>
         R$ 50,00
+        <br>
+        <button type="submit" class="btn btn-primary" id="assinar">Assinar</button>
+
       </div>
     </div>
   </div>
