@@ -102,7 +102,6 @@ form {
 img{
     overflow: hidden;
     display: flex;
-    justify-content: center;
     align-items: center;
     position: relative;
 }
@@ -115,29 +114,17 @@ img{
     z-index: -1;
 }
 
-/* .buttonsForm {
-  margin-top: 40px;
-  position: relative;
-  border-radius: 30px;
-  box-shadow: 0 0 7px 0 blueviolet;
+#drone{
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
-.buttonsForm button {
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  position: relative;
-  padding: 10px 29px;
+#reparo{
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.btnColor {
-  position: absolute;
-  width: 108px;
-  height: 100%;
-  background: linear-gradient(to right, #5956e9, #a963f8);
-  border-radius: 30px;
-  transition: .3s;
-} */
 
 input[type="text"], input[type="password"] {
   border: none;
@@ -167,11 +154,6 @@ button[type="submit"] {
   font-size: 13px;
 }
 
-#internet{
-
-
-
-}
 
 #login{
   border: solid rgb(255, 255, 255) 0.5px;
@@ -182,6 +164,7 @@ button[type="submit"] {
 }
 
   footer {
+    margin-top: 13%;
     background-color: black;
     color: white;
     text-align: center;
@@ -213,24 +196,25 @@ button[type="submit"] {
 
   <div class="container text-center" id="blocos">
     <div class="row">
-      <div class="col" id="camera">
+      <div class="col" id="camera" style="background-image: url('/imgs/cameras01.png');">
         <h2>CÂMERAS</h2>
         <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">BRAINSTORM</h5>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">BRAINSTORM</h5>
+                </div>
             </div>
-          </div>
-          <p>asdasasdfasfasfasfasfasasfdasfafsadfdsfsdf
-            asdasasdfasfasfasfasfasasfdasfafsadfdsfsdf
-            asdasasdfasfasfasfasfasasfdasfafsadfdsfsdf
-          </p>
-          <hr>
-          R$ 50,00
+            <p>asdasasdfasfasfasfasfasasfdasfafsadfdsfsdf
+                asdasasdfasfasfasfasfasasfdasfafsadfdsfsdf
+                asdasasdfasfasfasfasfasasfdasfafsadfdsfsdf
+            </p>
+            <hr>
+            R$ 50,00
         </div>
-
-      </div>
-      <div class="col"  id="drone">
+        
+    </div>
+    
+      <div class="col"  id="drone" style="background-image: url('/imgs/drone01.png');">
         <h2>DRONE</h2>
         <div class="col-sm-6">
           <div class="card">
@@ -246,7 +230,7 @@ button[type="submit"] {
         <hr>
         R$ 50,00
       </div>
-      <div class="col" id="internet">
+      <div class="col" id="internet"  style="background-image: url('/imgs/rede.png');">
         <h2>INTERNET</h2>
         <div class="col-sm-6">
           <div class="card">
@@ -262,7 +246,7 @@ button[type="submit"] {
         <hr>
         R$ 50,00
       </div>
-      <div class="col"  id="reparo">
+      <div class="col"  id="reparo" style="background-image: url('/imgs/manutencao01.png');">
         <h2>REPARO</h2>
         <div class="col-sm-6">
           <div class="card">
@@ -281,46 +265,7 @@ button[type="submit"] {
     </div>
   </div>
   
-
-
-
-
-  <div class="container" id="login">
-    <div class="buttonsForm">
-      <div class="btnColor"></div>
-      <h3>Login</h3>
-            <!--       <button id="btnSignup">Sign up</button>--> 
-   </div>
-
-    <form id="signin">
-      <input type="text" placeholder="Email" required />
-      <input type="password" placeholder="Password" required />
-      <div class="divCheck">
-        <input type="checkbox" />
-        <span>Relembrar Senha</span>
-      </div>
-      <button type="submit">Entrar</button>
-    </form>
-
-    <!-- <form id="signup">
-      <input type="text" placeholder="Email" required />
-      <i class="fas fa-envelope iEmail"></i>
-      <input type="password" placeholder="Password" required />
-      <i class="fas fa-lock iPassword"></i>
-      <input type="password" placeholder="Password" required />
-      <i class="fas fa-lock iPassword2"></i>
-      <div class="divCheck">
-        <input type="checkbox" required />
-        <span>Terms</span>
-      </div>
-      <button type="submit">Sign up</button>
-    </form> -->
-  </div>
-
-
-
-
-
+  
   <footer>
     BRAINSTORM 2023. TODOS OS DIREITOS RESERVADOS.
   </footer>
