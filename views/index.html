@@ -51,6 +51,8 @@
   }
 
   .col {
+    background-color:  rgb(21, 81, 140);
+
     height: 32rem;
     border: solid rgb(255, 255, 255) 0.5px;
     /* fazer a borda no formulario */
@@ -78,7 +80,6 @@
   }
 
   .container {
-  background-color:  rgb(21, 81, 140);
   padding: 6px;
   width: 350px;
   height: 450px;
@@ -96,7 +97,25 @@ form {
   width: 300px;
 }
 
-.buttonsForm {
+
+
+img{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* .buttonsForm {
   margin-top: 40px;
   position: relative;
   border-radius: 30px;
@@ -118,7 +137,7 @@ form {
   background: linear-gradient(to right, #5956e9, #a963f8);
   border-radius: 30px;
   transition: .3s;
-}
+} */
 
 input[type="text"], input[type="password"] {
   border: none;
@@ -148,41 +167,19 @@ button[type="submit"] {
   font-size: 13px;
 }
 
-#signin {
-  left: 25px;
-}
+#internet{
 
-#signup {
-  left: 450px;
-}
 
-i {
-  position: absolute;
-  left: 0;
-  padding: 10px 10px;
-}
 
-.iEmail {
-  top: 40px;
-}
-
-.iPassword {
-  top: 114px;
-}
-
-.iPassword2 {
-  top: 190px;
 }
 
 #login{
   border: solid rgb(255, 255, 255) 0.5px;
   margin-top: 15%;
   margin-bottom: 5%;
+  background-color:  rgb(21, 81, 140);
+
 }
-
-
-
-
 
   footer {
     background-color: black;
@@ -209,13 +206,14 @@ i {
         </div>
       </div>
     </nav>
-  </header>
+  </header> 
+    <img src="/imgs/wififundo04.jpg" alt="">
   <h1>SERVIÇOS</h1>
 
 
   <div class="container text-center" id="blocos">
     <div class="row">
-      <div class="col">
+      <div class="col" id="camera">
         <h2>CÂMERAS</h2>
         <div class="col-sm-6">
           <div class="card">
@@ -232,7 +230,7 @@ i {
         </div>
 
       </div>
-      <div class="col">
+      <div class="col"  id="drone">
         <h2>DRONE</h2>
         <div class="col-sm-6">
           <div class="card">
@@ -248,7 +246,7 @@ i {
         <hr>
         R$ 50,00
       </div>
-      <div class="col">
+      <div class="col" id="internet">
         <h2>INTERNET</h2>
         <div class="col-sm-6">
           <div class="card">
@@ -264,7 +262,7 @@ i {
         <hr>
         R$ 50,00
       </div>
-      <div class="col">
+      <div class="col"  id="reparo">
         <h2>REPARO</h2>
         <div class="col-sm-6">
           <div class="card">
@@ -290,9 +288,9 @@ i {
   <div class="container" id="login">
     <div class="buttonsForm">
       <div class="btnColor"></div>
-      <button id="btnSignin">Login</button>
-<!--       <button id="btnSignup">Sign up</button>
- -->    </div>
+      <h3>Login</h3>
+            <!--       <button id="btnSignup">Sign up</button>--> 
+   </div>
 
     <form id="signin">
       <input type="text" placeholder="Email" required />
