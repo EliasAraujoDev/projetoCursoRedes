@@ -12,58 +12,162 @@
         defer></script>
     <script src="/js/doacoes.js" defer></script>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
         .hidden {
             display: none;
+        }
+
+        .pagamentos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: flex-end;
+            border: solid black 0.5px;
+            margin-top: 20rem;
+        }
+
+        .pagamentos div {
+            margin: 1rem;
+            width: 30rem;
+
+
+        }
+
+        #checkboxContainer {
+            border-left: solid black 1px;
+            padding: 6rem;
+        }
+
+
+        #optionsContainer {
+            border: solid rgb(58, 55, 55) 0.5px;
+            border-radius: 5px;
+            background-color: rgba(0, 255, 255, 0.295);
+
         }
     </style>
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <div id="optionsContainer">
-        <div id="pixDiv">
-            <p>Pix</p>
-        </div>
-        <div id="boletoDiv">
-            <p>Boleto</p>
-        </div>
-        <div id="cartaoDiv">
-            <p>Cartão</p>
-        </div>
-        <div id="paypalDiv">
-            <p>Paypal</p>
-        </div>
-    </div>
+    <div class="pagamentos">
 
-    <div id="checkboxContainer">
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
-                onclick="toggleDiv('pixDiv')">
-            <label class="form-check-label" for="flexRadioDefault1">
-                <button>Pix</button>
-            </label>
+        <div id="optionsContainer">
+            <div id="pixDiv">
+                <p>Pix</p>
+            </div>
+            <div id="boletoDiv">
+                <p>Boleto</p>
+            </div>
+            <div id="cartaoDiv">
+                <form action="">
+                    <div>
+                        <label for="">Nome do Portador</label> <br>
+                        <input type="text" placeholder="Nome do Portador">
+                    </div>
+
+                    <div>
+                        <label for="">Numero do Cartão</label><br>
+                        <input type="number" placeholder="Numero do Cartão" width="100px">
+                    </div>
+
+                    <div>
+                        <label for="">Data de Validade</label><br>
+                        <input type="number" placeholder="MM">
+                        <input type="number" placeholder="AA">
+                    </div>
+
+                    <div>
+                        <label for="">CVC</label><br>
+                        <input type="number" placeholder="000">
+                    </div>
+                </form>
+
+
+            </div>
+            <div id="paypalDiv">
+                <p>Paypal</p>
+            </div>
         </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
-                onclick="toggleDiv('boletoDiv')">
-            <label class="form-check-label" for="flexRadioDefault2">
-                <button>Boleto</button>
-            </label>
+
+        <div id="checkboxContainer">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
+                    onclick="toggleDiv('pixDiv')">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Pix
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                    onclick="toggleDiv('boletoDiv')">
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Boleto
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3"
+                    onclick="toggleDiv('cartaoDiv')">
+                <label class="form-check-label" for="flexRadioDefault3">
+                    Cartão
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4"
+                    onclick="toggleDiv('paypalDiv')">
+                <label class="form-check-label" for="flexRadioDefault4">
+                    Paypal
+                </label>
+            </div>
         </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3"
-                onclick="toggleDiv('cartaoDiv')">
-            <label class="form-check-label" for="flexRadioDefault3">
-                <button>Cartão</button>
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4"
-                onclick="toggleDiv('paypalDiv')">
-            <label class="form-check-label" for="flexRadioDefault4">
-                <button>Paypal</button>
-            </label>
-        </div>
+
     </div>
 </body>
 
