@@ -1,14 +1,18 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho.php';
 ?>
-    <img src="/imgs/wififundo04.jpg" alt="">
+
+
+
+
+    <img src="./imgs/wififundo04.jpg" alt="">
 
   <h1>COOPERATIVA DE SERVIÇOS GRATUITOS COMUNITÁRIO</h1>
 
 
   <div class="container text-center" id="blocos">
     <div class="row">
-      <div class="col" id="camera" style="background-image: url('/imgs/cameras01.png');">
+      <div class="col" id="camera" style="background-image: url('./imgs/cameras01.png');">
         <h2>CÂMERAS</h2>
         <div class="col-sm-6">
             <div class="card">
@@ -29,7 +33,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
         
     </div>
     
-      <div class="col"  id="drone" style="background-image: url('/imgs/drone01.png');" >
+      <div class="col"  id="drone" style="background-image: url('./imgs/drone01.png');" >
         <h2>DRONE</h2>
         <div class="col-sm-6">
           <div class="card">
@@ -48,7 +52,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
         <button type="submit" class="btn btn-primary" id="assinar">Assinar</button>
 
       </div>
-      <div class="col" id="internet"  style="background-image: url('/imgs/rede.png');">
+      <div class="col" id="internet"  style="background-image: url('./imgs/rede.png');">
         <h2>INTERNET</h2>
         <div class="col-sm-6">
           <div class="card">
@@ -67,7 +71,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
         <button type="submit" class="btn btn-primary" id="assinar">Assinar</button>
 
       </div>
-      <div class="col"  id="reparo" style="background-image: url('/imgs/manutencao01.png');">
+      <div class="col"  id="reparo" style="background-image: url('./imgs/manutencao01.png');">
         <h2>REPARO</h2>
         <div class="col-sm-6">
           <div class="card">
@@ -90,11 +94,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
   </div>
   
 
+  </main>
   
-  
-  <footer>
-    BRAINSTORM 2023. TODOS OS DIREITOS RESERVADOS.
-  </footer>
 
 
 

@@ -1,0 +1,155 @@
+
+  body {
+    background-color: rgb(21, 81, 140);
+    color: white;
+  }
+
+  img{
+    justify-content: center;
+  }
+
+  h1 {
+    margin-bottom: 5%;
+    text-align: center;
+  }
+
+  .nav-link {
+    color: white
+  }
+
+  #blocos {
+    display: flex;
+    width: 100%;
+  }
+
+  .row {
+    margin: none;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: initial;
+  }
+
+  .col {
+    background-color:  rgb(21, 81, 140);
+
+    height: 32rem;
+    border: solid rgb(255, 255, 255) 0.5px;
+    /* fazer a borda no formulario */
+    border-radius: 5px;
+    /* fazer a cantos no formulario */
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    /* fazer sonbreamento */
+    justify-content: space-between;
+    border-radius: 10px;
+  }
+
+  .col:hover {
+    color: #fff;
+    background-color: rgb(28, 131, 199);
+  }
+
+  .col-sm-6 {
+    margin-top: 10%;
+    width: 100%;
+  }
+
+  P{
+    margin-top: 20px;
+    margin-bottom: 10%;
+    text-align: justify;
+  }
+
+  .container {
+  padding: 6px;
+  width: 350px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+/*   overflow: hidden;
+ */  border-radius: 10px;
+/*   box-shadow: 0 0 20px 0 darkgrey;
+ */}
+
+form {
+  transition: .5s;
+  width: 300px;
+}
+
+
+
+img{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#drone {
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+
+
+
+#reparo{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+input[type="text"], input[type="password"] {
+  border: none;
+  margin-top: 40px;
+  border-radius: 60px;
+  padding: 8px 0 8px 35px;
+  outline: none;
+  width: 100%;
+}
+
+button[type="submit"] {
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px 0 8px 15px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.divCheck {
+  margin: 10px 0 0 5px;
+  width: 80%;
+  font-size: 13px;
+}
+
+
+#login{
+  border: solid rgb(255, 255, 255) 0.5px;
+  margin-top: 15%;
+  margin-bottom: 5%;
+  background-color:  rgb(21, 81, 140);
+
+}
+
+  footer {
+    margin-top: 13%;
+    background-color: black;
+    color: white;
+    text-align: center;
+
+  }
+
