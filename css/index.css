@@ -1,35 +1,49 @@
 
-  body {
-    background-color: rgb(21, 81, 140);
+
+
+#index{
+  background-image: url("/projetocursoredes/imgs/wififundo04.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(21, 81, 140);
+  height: 873px;
+  color: white;
+  
+}
+
+
+ 
+
+  #index h1 {
     color: white;
-  }
-
-  img{
-    justify-content: center;
-  }
-
-  h1 {
     margin-bottom: 5%;
     text-align: center;
   }
 
-  .nav-link {
+  
+  #index p {
+    color: white;
+  }
+
+
+  #index .nav-link {
     color: white
   }
 
-  #blocos {
+  #index  #blocos {
     display: flex;
     width: 100%;
   }
 
-  .row {
+  #index .row {
     margin: none;
     justify-content: space-between;
     gap: 30px;
     flex-wrap: initial;
   }
 
-  .col {
+  #index .col {
     background-color:  rgb(21, 81, 140);
 
     height: 32rem;
@@ -43,23 +57,23 @@
     border-radius: 10px;
   }
 
-  .col:hover {
+  #index .col:hover {
     color: #fff;
     background-color: rgb(28, 131, 199);
   }
 
-  .col-sm-6 {
+  #index .col-sm-6 {
     margin-top: 10%;
     width: 100%;
   }
 
-  P{
+  #index P{
     margin-top: 20px;
     margin-bottom: 10%;
     text-align: justify;
   }
 
-  .container {
+  #index .container {
   padding: 6px;
   width: 350px;
   height: 450px;
@@ -72,29 +86,29 @@
 /*   box-shadow: 0 0 20px 0 darkgrey;
  */}
 
-form {
+ #index  form {
   transition: .5s;
   width: 300px;
 }
 
 
 
-img{
+/* #index img{
     overflow: hidden;
     display: flex;
     align-items: center;
     position: relative;
 }
 
-img{
+#index img{
     position: absolute;
     object-fit: cover;
     width: 100%;
     height: 100%;
     z-index: -1;
-}
+} */
 
-#drone {
+#index  #drone {
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -104,13 +118,13 @@ img{
 
 
 
-#reparo{
+#index  #reparo{
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 
-input[type="text"], input[type="password"] {
+#index input[type="text"], input[type="password"] {
   border: none;
   margin-top: 40px;
   border-radius: 60px;
@@ -119,7 +133,7 @@ input[type="text"], input[type="password"] {
   width: 100%;
 }
 
-button[type="submit"] {
+#index button[type="submit"] {
   color: white;
   border-radius: 5px;
   width: 100%;
@@ -130,26 +144,18 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-.divCheck {
+#index .divCheck {
   margin: 10px 0 0 5px;
   width: 80%;
   font-size: 13px;
 }
 
 
-#login{
+#index #login{
   border: solid rgb(255, 255, 255) 0.5px;
   margin-top: 15%;
   margin-bottom: 5%;
   background-color:  rgb(21, 81, 140);
 
 }
-
-  footer {
-    margin-top: 13%;
-    background-color: black;
-    color: white;
-    text-align: center;
-
-  }
 

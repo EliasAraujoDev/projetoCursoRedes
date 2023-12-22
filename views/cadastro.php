@@ -2,9 +2,13 @@
 require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho.php';
 ?>
 
+<head>
+    <link rel="stylesheet" href="/projetocursoredes/css/cadastroUser.css">
+</head>
 
-    <main>
-        <img src="/imgs/internetcadastro.jpg" alt="">
+
+    <div id="cadastro">
+
     <div class="container form-container">
         <form class="w-100" id="userForm">
             <h1 class="text-center mt-5">Cadastro de Usuário</h1>
@@ -28,7 +32,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
                         <input type="password" class="form-control" id="inputPassword4" placeholder="Senha" required>
                     </div>
                 </div>
-                </div>
+            </div>
 
             <div class="mb-3">
                 <label for="inputAddress" class="form-label">Endereço</label>
@@ -104,9 +108,11 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
             <button type="submit" class="btn btn-primary">Cadastrar</button>
         </form>
     </div>
-    </main>
+
+</div>
+
+
 
 <?php
-    require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/rodape.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/rodape.php';
 ?>
-    
