@@ -14,7 +14,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
       </div>
     </div>
 
-    <div class="mb-3" id="senha1">
+    <div class="mb-3">
       <label for="exampleInputPassword1" class="form-label">Senha</label>
       <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha" required>
     </div>

@@ -17,9 +17,9 @@
     
 }
 
-#login #senha1{
-    margin-top: none;
-    padding: none;
+#login #InputPassword4{
+    margin-top: 1px;
+    padding: 1px;
 }
 
 #login.esquecisenha{
