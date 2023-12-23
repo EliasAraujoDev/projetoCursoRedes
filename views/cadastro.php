@@ -7,7 +7,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
 </head>
 
 
-    <div id="cadastro">
+<div id="cadastro">
 
     <div class="container form-container">
         <form class="w-100" id="userForm">
@@ -28,9 +28,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
                 </div>
                 <div class="col-md-6">
                     <label for="inputPassword4" class="form-label">Senha</label>
-                    <div class="input-group">
-                        <input type="password" class="form-control" id="inputPassword4" placeholder="Senha" required>
-                    </div>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Senha" required>
                 </div>
             </div>
 
