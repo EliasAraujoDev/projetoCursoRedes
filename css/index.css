@@ -111,9 +111,16 @@
 #index  #drone {
   background-repeat: no-repeat;
   background-size: cover;
+  /* filter: grayscale(100%);  propriedade que deixa tudo escala cinza */
+
+
 
 }
 
+#index  #drone img{
+  filter: brightness(50%)
+
+}
 
 
 
