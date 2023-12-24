@@ -19,7 +19,9 @@
     background-color: white;
     position: relative;
 /*     z-index: 1;   
- */}
+ */  backdrop-filter: blur(15px);
+  background: rgba(255,255,255,0.2);
+}
 
 #login #InputPassword4{
     margin-top: 1px;
