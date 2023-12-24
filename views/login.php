@@ -2,9 +2,13 @@
 require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho.php';
 ?>
 
+<head>
+  <link rel="stylesheet" href="/projetocursoredes/css/login.css">
+</head>
 
 
 <div id="login">
+  <br><br><br><br>
   <form>
     <h1>Login</h1>
     <div class="mb-3">
