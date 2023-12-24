@@ -3,50 +3,53 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
 ?>
 
 <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
 
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        
-        .hidden {
-            display: none;
-        }
+    .hidden {
+        display: none;
+    }   
+    
+    h1{
+        text-align: center;
+    }
 
-        .pagamentos {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            align-content: flex-end;
-            border: solid black 0.5px;
-            margin-top: 20rem;
-        }
+    .pagamentos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: flex-end;
+        border: solid black 0.5px;
+        margin-top: 20rem;
+    }
 
-        .pagamentos div {
-            margin: 1rem;
-            width: 30rem;
-
-
-        }
-
-        #checkboxContainer {
-            border-left: solid black 1px;
-            padding: 6rem;
-        }
+    .pagamentos div {
+        margin: 1rem;
+        width: 30rem;
 
 
-        #optionsContainer {
-            border: solid rgb(58, 55, 55) 0.5px;
-            border-radius: 5px;
-            background-color: rgba(0, 255, 255, 0.295);
+    }
 
-        }
-    </style>
+    #checkboxContainer {
+        border-left: solid black 1px;
+        padding: 6rem;
+    }
+
+
+    #optionsContainer {
+        border: solid rgb(58, 55, 55) 0.5px;
+        border-radius: 5px;
+        background-color: rgba(0, 255, 255, 0.295);
+
+    }
+</style>
 </head>
 
+<div #doacoes>
 
-
-
+    <h1>Ecolha um metodo de doação</h1>
 
     <div class="pagamentos">
 
@@ -90,29 +93,25 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
 
         <div id="checkboxContainer">
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
-                    onclick="toggleDiv('pixDiv')">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" onclick="toggleDiv('pixDiv')">
                 <label class="form-check-label" for="flexRadioDefault1">
                     Pix
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
-                    onclick="toggleDiv('boletoDiv')">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" onclick="toggleDiv('boletoDiv')">
                 <label class="form-check-label" for="flexRadioDefault2">
                     Boleto
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3"
-                    onclick="toggleDiv('cartaoDiv')">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" onclick="toggleDiv('cartaoDiv')">
                 <label class="form-check-label" for="flexRadioDefault3">
                     Cartão
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4"
-                    onclick="toggleDiv('paypalDiv')">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" onclick="toggleDiv('paypalDiv')">
                 <label class="form-check-label" for="flexRadioDefault4">
                     Paypal
                 </label>
@@ -121,8 +120,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
 
     </div>
 
-
+</div>
 <?php
-    require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/rodape.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/rodape.php';
 ?>
-    
