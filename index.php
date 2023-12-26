@@ -90,10 +90,15 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
 
       </div>
     </div>
+    <h3>Sabendo da grande dificuldade de acessibilidade a serviços com uso de tecnologia, 
+      tais como acesso a internet, vigilancia e monitoramento patrimonial, 
+      e reparo tecnico em dispositivos de rede. A BrainStorm tem como objetivo dispobilizar 
+      serviços que visam aproximar a população mais carentes ao mundo da inovação, 
+      tecnologia e educação por meio da conectividade. </h3>
   </div>
 
 
- 
+
 
 
 </div>

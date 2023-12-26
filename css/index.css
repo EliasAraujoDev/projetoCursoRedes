@@ -2,7 +2,7 @@
 
 
 #index{
-  background-image: url("/projetocursoredes/imgs/wififundo04.jpg");
+  background-image: url("/projetocursoredes/imgs/wififundo09.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -162,5 +162,9 @@
   margin-bottom: 5%;
   background-color:  rgb(21, 81, 140);
 
+}
+
+h3{
+  text-align: justify;
 }
 
