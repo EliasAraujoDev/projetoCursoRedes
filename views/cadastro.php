@@ -49,26 +49,26 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
                 </div>
                 <div class="col-md-6">
                     <label for="inputPassword4" class="form-label">Senha</label>
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="Senha" required>
+                    <input type="password" name="senha" class="form-control" id="inputPassword4" placeholder="Senha" required>
                 </div>
             </div>
 
             <div class="mb-3">
                 <label for="inputAddress" class="form-label">Endereço</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="Rua ou Av" required>
+                <input type="text" name="endereco"  class="form-control" id="inputAddress" placeholder="Rua ou Av" required>
             </div>
             <div class="mb-3">
                 <label for="inputAddress2" class="form-label">Complemento</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, casa, sítio...">
+                <input type="text" name="complemento"  class="form-control" id="inputAddress2" placeholder="Apartamento, casa, sítio...">
             </div>
             <div class="mb-3 row">
                 <div class="col-md-6">
                     <label for="inputCity" class="form-label">Cidade</label>
-                    <input type="text" class="form-control" id="inputCity" required>
+                    <input type="text" name="cidade" class="form-control" id="inputCity" required>
                 </div>
                 <div class="col-md-2">
                     <label for="inputZip" class="form-label">CEP</label>
-                    <input type="text" class="form-control" id="inputZip" required>
+                    <input type="text" name="CEP"  class="form-control" id="inputZip" required>
                 </div>
                 <div class="col-md-4">
                     <label for="inputState" class="form-label">Estado</label>
@@ -102,25 +102,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
                         <option value="SE">Sergipe</option>
                         <option value="TO">Tocantins</option>
                     </select>
-                </div>
-            </div>
-
-            <div class="mb-3 row" id="additionalFields" style="display:none;">
-                <div class="col-md-6">
-                    <label for="inputCPF" class="form-label">CPF</label>
-                    <input type="text" class="form-control" id="inputCPF" placeholder="CPF">
-                </div>
-                <div class="col-md-6">
-                    <label for="inputProfilePic" class="form-label">Foto do Perfil</label>
-                    <input type="file" class="form-control" id="inputProfilePic">
-                </div>
-                <div class="col-md-6">
-                    <label for="inputContact" class="form-label">Contato</label>
-                    <input type="text" class="form-control" id="inputContact" placeholder="Contato">
-                </div>
-                <div class="col-md-6">
-                    <label for="inputArea" class="form-label">Área do Fotógrafo</label>
-                    <input type="text" class="form-control" id="inputArea" placeholder="Área do Fotógrafo">
                 </div>
             </div>
 
