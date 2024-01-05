@@ -1,16 +1,16 @@
-CREATE DATABASE Brainstorming;
+CREATE DATABASE IF NOT EXISTS projetoRede;
 
-USE Brainstorming;
+USE projetoRede;
 
-CREATE TABLE clientes (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    nome VARCHAR(255) NOT NULL,
-    CPF VARCHAR(11) NOT NULL,
-    email VARCHAR(255) UNIQUE NOT NULL,
+CREATE TABLE IF NOT EXISTS usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    cpf VARCHAR(14) NOT NULL UNIQUE,
     senha VARCHAR(255) NOT NULL,
     endereco VARCHAR(255) NOT NULL,
-    complemento VARCHAR(255),
-    cidade VARCHAR(255) NOT NULL,
-    CEP VARCHAR(8) NOT NULL,
-    estado VARCHAR(255) NOT NULL
+    complemento VARCHAR(100),
+    cidade VARCHAR(100) NOT NULL,
+    cep VARCHAR(10) NOT NULL
 );
+

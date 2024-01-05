@@ -1,3 +1,23 @@
+
+<?php
+require_once $_SERVER["DOCUMENT_ROOT"] . "/projeto/controller/CadastroController.php";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nome = $_POST["nome"];
+    $email = $_POST["email"];
+    $cpf = $_POST["cpf"];
+
+    if (!empty($nome) && !empty($email) && !empty($cpf)) {
+        $controller = new CadastroController();
+        $controller->cadastrarUsuario($nome, $email, $cpf);
+    } else {
+        echo "Por favor, preencha todos os campos.";
+    }
+}
+?>
+
+
+
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho.php';
 ?>
@@ -7,24 +27,25 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
 </head>
 
 
+
 <div id="cadastro">
 
     <div class="container form-container">
-        <form class="w-100" id="userForm">
+        <form action="/projeto/views/cadastro.php" method="post">
             <h1 class="text-center mt-5">Cadastro de Usuário</h1>
 
             <div class="mb-3 row">
                 <div class="col-md-6">
                     <label for="inputName" class="form-label">Nome</label>
-                    <input type="text" id="inputName" class="form-control" placeholder="Nome" required>
+                    <input type="text" name="nome" id="inputName" class="form-control" placeholder="Nome" required>
                 </div>
                 <div class="col-md-6">
                     <label for="inputSurname" class="form-label">CPF</label>
-                    <input type="number" class="form-control" id="inputSurname" placeholder="CPF" required>
+                    <input type="number" name="cpf" class="form-control" id="inputSurname" placeholder="CPF" required>
                 </div>
                 <div class="col-md-6">
                     <label for="inputEmail4" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Digite seu email" required>
+                    <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="Digite seu email" required>
                 </div>
                 <div class="col-md-6">
                     <label for="inputPassword4" class="form-label">Senha</label>
