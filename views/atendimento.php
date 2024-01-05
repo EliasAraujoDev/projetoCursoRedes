@@ -81,7 +81,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
         var cpfInput = document.getElementById('cpf');
         var cpf = cpfInput.value;
 
-        alert('Buscando informações para o CPF: ' + cpf);
+        alert('Cliente Localizado:  João da Silva ' + cpf);
     }
 
     function endCall() {
