@@ -34,6 +34,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
 
 <!--                 <label for="service-type">Tipo de Serviço:</label> -->
                 <select id="service-type">
+                   <option value="internet">Selecione</option>
+
                     <option value="internet">Internet</option>
                     <option value="drone">Drone</option>
                     <option value="cameras">Câmeras</option>
@@ -52,6 +54,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
 
 <!--             <label for="service-type">Tipo de Serviço:</label> -->
             <select id="service-type">
+                <option value="internet">Selecione</option>
+
                 <option value="internet">Internet</option>
                 <option value="drone">Drone</option>
                 <option value="cameras">Câmeras</option>
