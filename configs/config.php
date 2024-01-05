@@ -1,8 +1,13 @@
 <?php
+define('SGBD', 'mysql');
+define('DBLOCAL', 'localhost');
+define('DBNOME', 'projetoRede');
+define('USUARIO', 'root');
+define('SENHA', ''); // Sem senha para o usuário root
 
-define('DRIVE' , 'mysql');
-define('DBLOC', 'localhost');
-define('DBNAME', 'brainstorming');
-define('USER' , 'root');
-define('PASS', '');
+// Início da sessão
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+?>
 
