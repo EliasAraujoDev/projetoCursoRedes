@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER["DOCUMENT_ROOT"] . "/projeto/configs/config.php";
+require_once $_SERVER["DOCUMENT_ROOT"] . "/projetocursoredes/configs/config.php";
 
 $servername = DBLOCAL;
 $username = USUARIO;
