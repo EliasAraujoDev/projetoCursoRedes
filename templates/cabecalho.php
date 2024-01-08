@@ -36,8 +36,8 @@ if (session_status() == PHP_SESSION_NONE) {
             </button>
               <form class="d-flex" role="search">
                 
-                <a href="/projetocursoredes/views/doacoes.php"><button type="button" class="btn btn-light">Doações</button></a>
-                <a href="/projetocursoredes/views/login.php"><button type="button" class="btn btn-light">Login</button></a>
+<!--                 <a href="/projetocursoredes/views/doacoes.php"><button type="button" class="btn btn-light">Doações</button></a>-->   
+              <a href="/projetocursoredes/views/login.php"><button type="button" class="btn btn-light">Login</button></a>
                 <a href="/projetocursoredes/views/cadastro.php"><button type="button" class="btn btn-light">Cadastro</button></a>
               </form>
             </div>

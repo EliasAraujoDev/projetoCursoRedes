@@ -64,3 +64,6 @@ input, select {
 }
 
 
+.search-results p{
+  font-size: 18px;
+}

@@ -16,65 +16,65 @@ include $_SERVER["DOCUMENT_ROOT"] . "/projetocursoredes/controller/BuscaControll
         <div class="customer-info">
 
             <h2>Informações do Cliente</h2>
-        <form class="search-form" action="/projetocursoredes/views/busca.php" method="get">
-        <label for="busca">Buscar por CPF:</label>
-        <input type="text" name="busca" required><br>
-        <input type="submit" value="Buscar">
-        </form>
+            <form class="search-form" action="/projetocursoredes/views/busca.php" method="get">
+                <label for="busca">Buscar por CPF:</label>
+                <input type="text" name="busca" required>
+                <input type="submit" value="Buscar">
+            </form>
 
-        <?php
-    if ($_SERVER["REQUEST_METHOD"] == "GET") {
-        $cpfBusca = $_GET["busca"];
+            <?php
+            if ($_SERVER["REQUEST_METHOD"] == "GET") {
+                $cpfBusca = $_GET["busca"];
 
-        if (!empty($cpfBusca)) {
-            $controller = new BuscaController();
-            $users = $controller->buscarUsuarios($cpfBusca);
+                if (!empty($cpfBusca)) {
+                    $controller = new BuscaController();
+                    $users = $controller->buscarUsuarios($cpfBusca);
 
-            if (count($users) > 0) {
-                echo "<h3>Resultado da busca:</h3>";
-                echo '<div class="search-results">';
-                foreach ($users as $user) {
-                    echo "<p>Nome: " . $user['nome'] . "<br>";
-                    echo "E-mail: " . $user['email'] . "<br>";
-                    echo "CPF: " . $user['cpf'] . "<br>";
-                    echo "Endereço: ". $user['endereco']." ".$user['cidade' ]." CEP:".$user['cep'] ."</p>";
+                    if (count($users) > 0) {
+                        echo "<h3>Resultado da busca:</h3>";
+                        echo '<div class="search-results">';
+                        foreach ($users as $user) {
+                            echo "<p>Nome: " . $user['nome'] . "<br>";
+                            echo "E-mail: " . $user['email'] . "<br>";
+                            echo "CPF: " . $user['cpf'] . "<br>";
+                            echo "Endereço: " . $user['endereco'] . " " . $user['cidade'] . " CEP:" . $user['cep'] . "</p>";
+                        }
+                        echo '</div>';
+                    } else {
+                        echo "<p>Nenhum usuário encontrado com o CPF informado.</p>";
+                    }
+                } else {
+                    echo "<p>Por favor, informe um CPF para buscar.</p>";
                 }
-                echo '</div>';
-            } else {
-                echo "<p>Nenhum usuário encontrado com o CPF informado.</p>";
             }
-        } else {
-            echo "<p>Por favor, informe um CPF para buscar.</p>";
-        }
-    }
-    ?>
-</div>
-            
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                    Adquirir produto
-                </label>
+            ?>
+        </div>
 
-<!--                 <label for="service-type">Tipo de Serviço:</label> -->
-                <select id="service-type">
-                   <option value="internet">Selecione</option>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                Adquirir produto
+            </label>
 
-                    <option value="internet">Internet</option>
-                    <option value="drone">Drone</option>
-                    <option value="cameras">Câmeras</option>
-                    <option value="fiber-repair">Reparo de Fibra Óptica</option>
-                </select>
+            <!--                 <label for="service-type">Tipo de Serviço:</label> -->
+            <select id="service-type">
+                <option value="internet">Selecione</option>
 
-                <br>
+                <option value="internet">Internet</option>
+                <option value="drone">Drone</option>
+                <option value="cameras">Câmeras</option>
+                <option value="fiber-repair">Reparo de Fibra Óptica</option>
+            </select>
 
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                <label class="form-check-label" for="flexRadioDefault2">
-                    Reparo de produto
-                </label>
-            
+            <br>
+
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+                Reparo de produto
+            </label>
+
 
             <select id="service-type">
                 <option value="internet">Selecione</option>
@@ -85,10 +85,7 @@ include $_SERVER["DOCUMENT_ROOT"] . "/projetocursoredes/controller/BuscaControll
                 <option value="fiber-repair">Reparo de Fibra Óptica</option>
             </select>
 
-            </div>
         </div>
-
-
 
         <div class="options">
             <button type="button" class="btn btn-primary" class="end-call" onclick="endCall()">Finalizar Atendimento</button>
@@ -99,11 +96,16 @@ include $_SERVER["DOCUMENT_ROOT"] . "/projetocursoredes/controller/BuscaControll
     </div>
 
 
+
+
+</div>
+
+
 </div>
 
 
 
-<!-- <script>
+<script>
     function searchByCPF() {
         var cpfInput = document.getElementById('cpf');
         var cpf = cpfInput.value;
@@ -122,7 +124,7 @@ include $_SERVER["DOCUMENT_ROOT"] . "/projetocursoredes/controller/BuscaControll
     function generateProtocol() {
         alert('Protocolo gerado: 025863549525.');
     }
-</script> -->
+</script>
 
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/rodape.php';
