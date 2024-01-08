@@ -1,5 +1,6 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho.php';
+include $_SERVER["DOCUMENT_ROOT"] . "/projetocursoredes/templates/cabecalho.php";
+include $_SERVER["DOCUMENT_ROOT"] . "/projetocursoredes/controller/BuscaController.php";
 ?>
 
 <head>
@@ -15,17 +16,40 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
         <div class="customer-info">
 
             <h2>Informações do Cliente</h2>
-            <div>
-                <label for="cpf">Digite o CPF do cliente:</label>
-                <input type="text" id="cpf" placeholder="Digite o CPF">
-                <button type="button" class="btn btn-primary" onclick="searchByCPF()">Buscar por CPF</button>
-            </div>
-            <p>Nome: João da Silva</p>
-            <p>CPF: 123.456.789-00</p>
-            <p>Matrícula: 987654</p>
+        <form class="search-form" action="/projetocursoredes/views/busca.php" method="get">
+        <label for="busca">Buscar por CPF:</label>
+        <input type="text" name="busca" required><br>
+        <input type="submit" value="Buscar">
+        </form>
 
-            <p>Endereço: Rua Exemplo, 123</p>
+        <?php
+    if ($_SERVER["REQUEST_METHOD"] == "GET") {
+        $cpfBusca = $_GET["busca"];
 
+        if (!empty($cpfBusca)) {
+            $controller = new BuscaController();
+            $users = $controller->buscarUsuarios($cpfBusca);
+
+            if (count($users) > 0) {
+                echo "<h3>Resultado da busca:</h3>";
+                echo '<div class="search-results">';
+                foreach ($users as $user) {
+                    echo "<p>Nome: " . $user['nome'] . "<br>";
+                    echo "E-mail: " . $user['email'] . "<br>";
+                    echo "CPF: " . $user['cpf'] . "<br>";
+                    echo "Endereço: ". $user['endereco']." ".$user['cidade' ]." CEP:".$user['cep'] ."</p>";
+                }
+                echo '</div>';
+            } else {
+                echo "<p>Nenhum usuário encontrado com o CPF informado.</p>";
+            }
+        } else {
+            echo "<p>Por favor, informe um CPF para buscar.</p>";
+        }
+    }
+    ?>
+</div>
+            
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                 <label class="form-check-label" for="flexRadioDefault1">
@@ -52,7 +76,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
                 </label>
             
 
-<!--             <label for="service-type">Tipo de Serviço:</label> -->
             <select id="service-type">
                 <option value="internet">Selecione</option>
 
@@ -79,8 +102,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
 </div>
 
 
-<!-- javascript -->
-<script>
+
+<!-- <script>
     function searchByCPF() {
         var cpfInput = document.getElementById('cpf');
         var cpf = cpfInput.value;
@@ -99,7 +122,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
     function generateProtocol() {
         alert('Protocolo gerado: 025863549525.');
     }
-</script>
+</script> -->
 
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/rodape.php';

@@ -1,26 +1,31 @@
+<?php
+require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho.php';
+?>
 
 <?php
-require_once $_SERVER["DOCUMENT_ROOT"] . "/projeto/controller/CadastroController.php";
+require_once $_SERVER["DOCUMENT_ROOT"] . "/projetocursoredes/controller/CadastroController.php";
+?>
 
+<?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST["nome"];
     $email = $_POST["email"];
     $cpf = $_POST["cpf"];
+    $senha = $_POST["senha"];
+    $endereco = $_POST["endereco"];
+    $complemento = $_POST["complemento"];
+    $cidade = $_POST["cidade"];
+    $cep = $_POST["cep"];
 
-    if (!empty($nome) && !empty($email) && !empty($cpf)) {
+    if (!empty($nome) && !empty($email) && !empty($cpf) && !empty($senha) && !empty($endereco) && !empty($cidade) && !empty($cep)) {
         $controller = new CadastroController();
-        $controller->cadastrarUsuario($nome, $email, $cpf);
+        $controller->cadastrarUsuario($nome, $email, $cpf, $senha, $endereco, $complemento, $cidade, $cep);
     } else {
-        echo "Por favor, preencha todos os campos.";
+        echo "Por favor, preencha todos os campos obrigatórios.";
     }
 }
 ?>
 
-
-
-<?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho.php';
-?>
 
 <head>
     <link rel="stylesheet" href="/projetocursoredes/css/cadastroUser.css">
@@ -31,7 +36,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
 <div id="cadastro">
 
     <div class="container form-container">
-        <form action="/projeto/views/cadastro.php" method="post">
+        <form action="/projetocursoredes/views/cadastro.php" method="post">
             <h1 class="text-center mt-5">Cadastro de Usuário</h1>
 
             <div class="mb-3 row">
@@ -68,11 +73,11 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
                 </div>
                 <div class="col-md-2">
                     <label for="inputZip" class="form-label">CEP</label>
-                    <input type="text" name="CEP"  class="form-control" id="inputZip" required>
+                    <input type="text" name="cep"  class="form-control" id="inputZip" required>
                 </div>
                 <div class="col-md-4">
                     <label for="inputState" class="form-label">Estado</label>
-                    <select id="inputState" class="form-select" required>
+                    <select id="inputState" class="form-select" >
                         <option selected hidden>Escolha...</option>
                         <option value="AC">Acre</option>
                         <option value="AL">Alagoas</option>
