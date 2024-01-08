@@ -15,6 +15,7 @@ include $_SERVER["DOCUMENT_ROOT"] . "/projetocursoredes/controller/BuscaControll
     <div class="container">
         <div class="customer-info">
 
+
             <h2>Informações do Cliente</h2>
             <form class="search-form" action="/projetocursoredes/views/busca.php" method="get">
                 <input type="text" placeholder="Buscar CPF " name="busca" required>
@@ -92,6 +93,9 @@ include $_SERVER["DOCUMENT_ROOT"] . "/projetocursoredes/controller/BuscaControll
             <button type="button" class="btn btn-primary" class="generate-equipe" onclick="generateEquipe()">Equipe Técnica</button>
 
         </div>
+
+        <h5>Atendente: Sophia Amorim</h5>
+
     </div>
 
 

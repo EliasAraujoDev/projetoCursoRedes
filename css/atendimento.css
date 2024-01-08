@@ -8,6 +8,9 @@ body {
     height: 100vh;
 }
  
+#atendimento{
+  height: 842px;
+}
 
 h1{
   text-align: center;
