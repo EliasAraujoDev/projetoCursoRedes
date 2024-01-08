@@ -31,9 +31,7 @@ if (session_status() == PHP_SESSION_NONE) {
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
             <a class="navbar-brand" href="/projetocursoredes/index.php">Brainstorming</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+            
               <form class="d-flex" role="search">
                 
 <!--                 <a href="/projetocursoredes/views/doacoes.php"><button type="button" class="btn btn-light">Doações</button></a>-->   
@@ -44,5 +42,4 @@ if (session_status() == PHP_SESSION_NONE) {
           </div>
         </nav>
       </header> 
-      <main>
-
+      

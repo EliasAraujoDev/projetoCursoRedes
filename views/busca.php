@@ -17,9 +17,8 @@ include $_SERVER["DOCUMENT_ROOT"] . "/projetocursoredes/controller/BuscaControll
 
             <h2>Informações do Cliente</h2>
             <form class="search-form" action="/projetocursoredes/views/busca.php" method="get">
-                <label for="busca">Buscar por CPF:</label>
-                <input type="text" name="busca" required>
-                <input type="submit" value="Buscar">
+                <input type="text" placeholder="Buscar CPF " name="busca" required>
+                <input type="submit" class="btn btn-primary" value="Buscar">
             </form>
 
             <?php

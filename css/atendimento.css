@@ -18,7 +18,7 @@ h1{
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 14px 16px 35px 2px rgba(0,0,0,0.75);
     max-width: 600px;
     width: 100%;
     text-align: center;
@@ -66,4 +66,41 @@ input, select {
 
 .search-results p{
   font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 2%;
+    margin-right: 2%;
+    justify-content: center;
+  }
+
+  #atendimento{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+
+
+  }
+  .options{
+    gap:20px
+  }
+  h3{
+    border: 1px;
+    border-color: black;
+    background-color: rgb(209, 204, 204);
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+  
+  .search-results {
+    border: 1px;
+    border-color: black;
+    background-color: rgb(209, 204, 204);
+    margin-top: 0;
+  }
+
 }

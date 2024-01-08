@@ -2,7 +2,7 @@
 require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho.php';
 ?>
 
-
+<main id="indexB">
 <div id="index">
 
 
@@ -103,7 +103,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
 
 </div>
 
-
+</main>
 
 
 
