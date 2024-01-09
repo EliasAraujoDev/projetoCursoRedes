@@ -3,10 +3,11 @@
 
 #perfil {
     display: flex;
-    background-image: linear-gradient();
+    background-image: url(/projetocursoredes/imgs/mundo2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    opacity: 80%;
 
 }
 
@@ -14,9 +15,11 @@
     text-align: left;
     margin-top: 40px;
     margin-left: 20px;
+    color: white;
 }
-#perfil h6{
+#perfil h3{
     text-align: center;
+    color: white;
 }
 
 
@@ -26,7 +29,7 @@
     height: 200px;
     margin: 4px;
     margin-top: 8%;
-    margin-bottom: 47%;
+    margin-bottom: 35.4%;
 
 
 }
@@ -36,9 +39,14 @@
     border-radius: 10px;
     margin: 20px;
     transition: 500ms linear; 
+    backdrop-filter: blur(15px);
+
 
 }
 
+#perfil .col b{
+    color: white;
+}
 
 #perfil .col:hover {
     transform: scale(1.2);

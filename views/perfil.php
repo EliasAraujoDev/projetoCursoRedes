@@ -13,10 +13,10 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
 
         <h4>Bem vindo, João Silva!</h4>
 
-        <h6>Configuração de seus serviços</h6>
+        <h3>Configuração de seus serviços</h3>
         <div class="row">
             <div class="col">
-                <p>CÂMERAS</p>
+                <p><b>CÂMERAS</p></b>
                 <button type="button" class="btn btn-primary">Ativar</button>
                 <button type="button" class="btn btn-danger">Desativar</button>
                 <button type="button" class="btn btn-warning">Suporte</button>
@@ -24,14 +24,14 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
 
             </div>
             <div class="col">
-                <p>DRONE</p>
+                <b><p>DRONE</p></b>
                 <button type="button" class="btn btn-primary">Ativar</button>
                 <button type="button" class="btn btn-danger">Desativar</button>
                 <button type="button" class="btn btn-warning">Suporte</button>
 
             </div>
             <div class="col">
-                <p>INTERNET</p>
+                <b><p>INTERNET</p></b>
 
                 <button type="button" class="btn btn-primary">Ativar</button>
                 <button type="button" class="btn btn-danger">Desativar</button>
@@ -39,7 +39,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
 
             </div>
             <div class="col">
-                <p> REPARO</p>
+                <b><p> REPARO</p></b>
 
                 <button type="button" class="btn btn-primary">Ativar</button>
                 <button type="button" class="btn btn-danger">Desativar</button>

@@ -81,7 +81,19 @@
 }
 
 #cadastro .btn-primary{
+  display: flex;
   --bs-btn-bg: #0d6efd;
+  position: center;
 }
 
 
+@media (max-width: 600px) {
+  #cadastro .form-container form{
+
+  margin-top: 30px;
+  backdrop-filter: blur(40px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+
+}
