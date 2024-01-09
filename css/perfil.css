@@ -1,0 +1,45 @@
+
+
+
+#perfil {
+    display: flex;
+    background-image: linear-gradient();
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#perfil h4{
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+#perfil h6{
+    text-align: center;
+}
+
+
+
+#perfil .row{
+    display: flex;
+    height: 200px;
+    margin: 4px;
+    margin-top: 8%;
+    margin-bottom: 47%;
+
+
+}
+#perfil .col{
+    border-color: black;
+    border: solid rgb(0, 0, 0) 0.5px;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 500ms linear; 
+
+}
+
+
+#perfil .col:hover {
+    transform: scale(1.2);
+  }

@@ -54,27 +54,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="Digite seu email" required>
                 </div>
                 <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Senha</label>
-            <div class="input-group">
-                <input  style="background-color: white;" type="password" name="senha" class="form-control" id="inputPassword4" placeholder="Senha" required>
-                <button style="background-color: white;" type="button" id="showPassword" class="btn btn-outline-secondary" onclick="togglePassword()">
-                    <i class="bi bi-eye"></i>
-                </button>
-            </div>
-        </div>
+                    <label for="inputPassword4" class="form-label">Senha</label>
+                    <div class="input-group">
+                        <input style="background-color: white;" type="password" name="senha" class="form-control" id="inputPassword4" placeholder="Senha" required>
+                        <button style="background-color: white;" type="button" id="showPassword" class="btn btn-outline-secondary" onclick="togglePassword()">
+                            <i class="bi bi-eye"></i>
+                        </button>
+                    </div>
+                </div>
                 <div class="col-md-6">
                     <label for="inputPassword4" class="form-label">Número CadÚnico</label>
-                    <input type="namber" name="cad" class="form-control" id="inputPassword4" placeholder="CadÚnico" required>
+                    <input type="number" name="cad" class="form-control" id="inputPassword4" placeholder="CadÚnico" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Telefone</label>
+                    <input type="number" name="cad" class="form-control" id="inputPassword4" placeholder="(99)99999-9999 " required>
                 </div>
             </div>
 
             <div class="mb-3">
                 <label for="inputAddress" class="form-label">Endereço</label>
-                <input type="text" name="endereco"  class="form-control" id="inputAddress" placeholder="Rua ou Av" required>
+                <input type="text" name="endereco" class="form-control" id="inputAddress" placeholder="Rua ou Av" required>
             </div>
             <div class="mb-3">
                 <label for="inputAddress2" class="form-label">Complemento</label>
-                <input type="text" name="complemento"  class="form-control" id="inputAddress2" placeholder="Apartamento, casa, sítio...">
+                <input type="text" name="complemento" class="form-control" id="inputAddress2" placeholder="Apartamento, casa, sítio...">
             </div>
             <div class="mb-3 row">
                 <div class="col-md-6">
@@ -83,11 +88,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
                 <div class="col-md-2">
                     <label for="inputZip" class="form-label">CEP</label>
-                    <input type="text" name="cep"  class="form-control" id="inputZip" required>
+                    <input type="text" name="cep" class="form-control" id="inputZip" required>
                 </div>
                 <div class="col-md-4">
                     <label for="inputState" class="form-label">Estado</label>
-                    <select id="inputState" class="form-select" >
+                    <select id="inputState" class="form-select">
                         <option selected hidden>Escolha...</option>
                         <option value="AC">Acre</option>
                         <option value="AL">Alagoas</option>
@@ -120,7 +125,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
             </div>
 
-            <button type="submit" class="btn btn-primary">Cadastrar</button>
+            <a href="/projetocursoredes/views/perfil.php"><button type="submit" class="btn btn-primary">Cadastrar</button></a>
         </form>
     </div>
 

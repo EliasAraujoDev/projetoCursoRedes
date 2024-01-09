@@ -59,6 +59,12 @@ main{
     /* fazer sonbreamento */
     justify-content: space-between;
     border-radius: 10px;
+    transition: 500ms linear; 
+
+  }
+
+  #index .col:hover {
+    transform: scale(1.1);
   }
 
   #index .col:hover {

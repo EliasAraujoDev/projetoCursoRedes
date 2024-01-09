@@ -30,7 +30,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
       <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
       <label class="form-check-label" for="exampleCheck1">Não sou robô</label>
     </div>
-    <a href="/projetocursoredes/views/login.php"></a><button type="submit" class="btn btn-primary" id="entrar">Entrar</button>
+    <a href="/projetocursoredes/views/perfil.php"><button type="submit" class="btn btn-primary" id="entrar">Entrar</button></a>
   </form>
 </div>
 
