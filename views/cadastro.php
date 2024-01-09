@@ -12,14 +12,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $cpf = $_POST["cpf"];
     $senha = $_POST["senha"];
+    $cad = $_POST["cad"];
     $endereco = $_POST["endereco"];
     $complemento = $_POST["complemento"];
     $cidade = $_POST["cidade"];
     $cep = $_POST["cep"];
 
-    if (!empty($nome) && !empty($email) && !empty($cpf) && !empty($senha) && !empty($endereco) && !empty($cidade) && !empty($cep)) {
+    if (!empty($nome) && !empty($email) && !empty($cpf) && !empty($senha) && !empty($cad) && !empty($endereco) && !empty($cidade) && !empty($cep)) {
         $controller = new CadastroController();
-        $controller->cadastrarUsuario($nome, $email, $cpf, $senha, $endereco, $complemento, $cidade, $cep);
+        $controller->cadastrarUsuario($nome, $email, $cpf, $senha, $cad, $endereco, $complemento, $cidade, $cep);
     } else {
         echo "Por favor, preencha todos os campos obrigatórios.";
     }
@@ -46,19 +47,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
                 <div class="col-md-6">
                     <label for="inputSurname" class="form-label">CPF</label>
-                    <input type="number" name="cpf" class="form-control" id="inputSurname" placeholder="CPF" required>
+                    <input type="namber" name="cpf" class="form-control" id="inputSurname" placeholder="CPF" required>
                 </div>
                 <div class="col-md-6">
                     <label for="inputEmail4" class="form-label">Email</label>
                     <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="Digite seu email" required>
                 </div>
                 <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Senha</label>
-                    <input type="password" name="senha" class="form-control" id="inputPassword4" placeholder="Senha" required>
-                </div>
+            <label for="inputPassword4" class="form-label">Senha</label>
+            <div class="input-group">
+                <input  style="background-color: white;" type="password" name="senha" class="form-control" id="inputPassword4" placeholder="Senha" required>
+                <button style="background-color: white;" type="button" id="showPassword" class="btn btn-outline-secondary" onclick="togglePassword()">
+                    <i class="bi bi-eye"></i>
+                </button>
+            </div>
+        </div>
                 <div class="col-md-6">
                     <label for="inputPassword4" class="form-label">Número CadÚnico</label>
-                    <input type="password" name="senha" class="form-control" id="inputPassword4" placeholder="CadÚnico" required>
+                    <input type="namber" name="cad" class="form-control" id="inputPassword4" placeholder="CadÚnico" required>
                 </div>
             </div>
 
@@ -119,14 +125,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
 
 </div>
-
 <script>
     function togglePassword() {
-        var passwordField = document.getElementById('inputPassword4');
-        if (passwordField.type === 'password') {
-            passwordField.type = 'text';
+        var passwordField = document.getElementById("inputPassword4");
+        var showPasswordButton = document.getElementById("showPassword");
+
+        if (passwordField.type === "password") {
+            passwordField.type = "text";
+            showPasswordButton.innerHTML = '<i class="bi bi-eye-slash"></i>';
         } else {
-            passwordField.type = 'password';
+            passwordField.type = "password";
+            showPasswordButton.innerHTML = '<i class="bi bi-eye"></i>';
         }
     }
 </script>
