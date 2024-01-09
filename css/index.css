@@ -75,6 +75,7 @@ main{
     margin-top: 20px;
     margin-bottom: 10%;
     text-align: justify;
+    font-size: 20px;
   }
 
   #index .container {
@@ -151,6 +152,7 @@ main{
   padding: 8px 0 8px 15px;
   font-size: 15px;
   cursor: pointer;
+  margin-top: 40px;
 }
 
 #index .divCheck {
@@ -171,7 +173,12 @@ main{
 #index h3{
   text-align: justify;
   margin-top: 30px;
-  font-size: 1.30rem;
+  font-size: 1.5rem;
+}
+
+#index #btn.camera{
+  margin-bottom: 20px;
+
 }
 
 @media (max-width: 600px) {
@@ -198,6 +205,13 @@ main{
 
   main{
     height: 2500px;
+  }
+
+  #index h3{
+    text-align: justify;
+    margin-top: 30px;
+    font-size: 1rem;
+    margin: 5%;
   }
 
 }

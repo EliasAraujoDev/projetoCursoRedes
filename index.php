@@ -19,14 +19,11 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
               <h5 class="card-title">BRAINSTORM</h5>
             </div>
           </div>
-          <p>Visa inibir a ação de vandalismos, furto e tentativa de invasão patrimonial. <br><br><br>
-            OBS: Este serviço é mantido atraves de parcerias com orgãos publicos e empresas e doaçõesb
+          <p>Visa inibir a ação de vandalismos, furto e tentativa de invasão patrimonial. <br><br>
+            OBS: Este serviço é mantido atraves de parcerias com orgãos publicos e empresas e doações.
 
           </p>
-          <!-- <hr>
-            R$ 50,00
-            <br> -->
-          <button type="submit" class="btn btn-primary" id="assinar">Assinar</button>
+          <button type="submit" class="btn btn-primary"  id="btn.camera">Assinar</button>
 
         </div>
 
@@ -45,9 +42,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
           OBS: Este serviço é mantido atraves de parcerias com orgãos publicos e empresas e doações
 
         </p>
-        <!-- <hr>
-        R$ 50,00
-        <br> -->
         <button type="submit" class="btn btn-primary" id="assinar">Assinar</button>
 
       </div>
@@ -64,11 +58,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
           OBS: Serviço gratuito para familias com cad-unico.
 
         </p>
-        <!--  <hr>
-        R$ 50,00
-        <br> -->
-        <button type="submit" class="btn btn-primary" id="assinar">Assinar</button>
 
+          <button type="submit" class="btn btn-primary" id="assinar">Assinar</button>
       </div>
       <div class="col" id="reparo" style="background-image: url('./imgs/manutencao01.png');">
         <h2>REPARO</h2>
@@ -83,9 +74,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
           anti-virus.roteadores e switcs.<br><br><br><br><br>
 
         </p>
-        <!--      <hr>
-        R$ 50,00
-        <br> -->
+
         <button type="submit" class="btn btn-primary" id="assinar">Assinar</button>
 
       </div>

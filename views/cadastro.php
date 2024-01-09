@@ -56,6 +56,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <label for="inputPassword4" class="form-label">Senha</label>
                     <input type="password" name="senha" class="form-control" id="inputPassword4" placeholder="Senha" required>
                 </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Número CadÚnico</label>
+                    <input type="password" name="senha" class="form-control" id="inputPassword4" placeholder="CadÚnico" required>
+                </div>
             </div>
 
             <div class="mb-3">
