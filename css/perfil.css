@@ -40,8 +40,6 @@
     margin: 20px;
     transition: 500ms linear; 
     backdrop-filter: blur(15px);
-
-
 }
 
 #perfil .col b{
@@ -50,4 +48,56 @@
 
 #perfil .col:hover {
     transform: scale(1.2);
+  }
+  
+  
+  
+  @media (max-width: 600px) {
+
+#perfil {
+    display: flex;
+    background-image: url(/projetocursoredes/imgs/mundo2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 80%;
+    height: 835px;
+
+}
+
+#perfil h4{
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+}
+#perfil h3{
+    text-align: center;
+    color: white;
+}
+
+
+#perfil .row{
+    display: flex;
+    height: 300px;
+    margin: 4px;
+    margin-top: 8%;
+    margin-bottom: 35.4%;
+
+
+}
+#perfil .col{
+    border-color: black;
+    border: solid rgb(0, 0, 0) 0.5px;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 500ms linear; 
+    backdrop-filter: blur(15px);
+    height: 250px;
+}
+
+button{
+    margin: 10px;
+}
+
+
   }
