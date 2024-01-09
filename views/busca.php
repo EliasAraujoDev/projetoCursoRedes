@@ -11,10 +11,8 @@ include $_SERVER["DOCUMENT_ROOT"] . "/projetocursoredes/controller/BuscaControll
 
     <h1>Central de atendimento ao Cliente</h1>
 
-
     <div class="container">
         <div class="customer-info">
-
 
             <h2>Informações do Cliente</h2>
             <form class="search-form" action="/projetocursoredes/views/busca.php" method="get">
@@ -24,27 +22,30 @@ include $_SERVER["DOCUMENT_ROOT"] . "/projetocursoredes/controller/BuscaControll
 
             <?php
             if ($_SERVER["REQUEST_METHOD"] == "GET") {
-                $cpfBusca = $_GET["busca"];
+                // Check if the key "busca" is set in the $_GET array
+                if (isset($_GET["busca"])) {
+                    $cpfBusca = $_GET["busca"];
 
-                if (!empty($cpfBusca)) {
-                    $controller = new BuscaController();
-                    $users = $controller->buscarUsuarios($cpfBusca);
+                    if (!empty($cpfBusca)) {
+                        $controller = new BuscaController();
+                        $users = $controller->buscarUsuarios($cpfBusca);
 
-                    if (count($users) > 0) {
-                        echo "<h3>Resultado da busca:</h3>";
-                        echo '<div class="search-results">';
-                        foreach ($users as $user) {
-                            echo "<p>Nome: " . $user['nome'] . "<br>";
-                            echo "E-mail: " . $user['email'] . "<br>";
-                            echo "CPF: " . $user['cpf'] . "<br>";
-                            echo "Endereço: " . $user['endereco'] . " " . $user['cidade'] . " CEP:" . $user['cep'] . "</p>";
+                        if (count($users) > 0) {
+                            echo "<h3>Resultado da busca:</h3>";
+                            echo '<div class="search-results">';
+                            foreach ($users as $user) {
+                                echo "<p>Nome: " . $user['nome'] . "<br>";
+                                echo "E-mail: " . $user['email'] . "<br>";
+                                echo "CPF: " . $user['cpf'] . "<br>";
+                                echo "Endereço: " . $user['endereco'] . " " . $user['cidade'] . " CEP:" . $user['cep'] . "</p>";
+                            }
+                            echo '</div>';
+                        } else {
+                            echo "<p>Nenhum usuário encontrado com o CPF informado.</p>";
                         }
-                        echo '</div>';
                     } else {
-                        echo "<p>Nenhum usuário encontrado com o CPF informado.</p>";
+                        echo "<p>Por favor, informe um CPF para buscar.</p>";
                     }
-                } else {
-                    echo "<p>Por favor, informe um CPF para buscar.</p>";
                 }
             }
             ?>

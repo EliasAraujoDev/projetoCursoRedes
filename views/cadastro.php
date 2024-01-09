@@ -120,6 +120,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 </div>
 
+<script>
+    function togglePassword() {
+        var passwordField = document.getElementById('inputPassword4');
+        if (passwordField.type === 'password') {
+            passwordField.type = 'text';
+        } else {
+            passwordField.type = 'password';
+        }
+    }
+</script>
+
 
 
 <?php
