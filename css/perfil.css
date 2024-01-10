@@ -7,9 +7,21 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 80%;
+    opacity: 90%;
 
 }
+
+
+/* #perfil #titulo{
+    display: flex;
+    justify-content: center;
+} */
+
+/* #perfil  .text-center{
+display: flex;
+flex-wrap: wrap;
+ width: 100%;
+} */
 
 #perfil h4{
     text-align: left;
@@ -29,7 +41,7 @@
     height: 200px;
     margin: 4px;
     margin-top: 8%;
-    margin-bottom: 35.4%;
+    margin-bottom: 30.4%;
 
 
 }
@@ -40,6 +52,7 @@
     margin: 20px;
     transition: 500ms linear; 
     backdrop-filter: blur(15px);
+
 }
 
 #perfil .col b{
