@@ -19,8 +19,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
               <h5 class="card-title">BRAINSTORM</h5>
             </div>
           </div>
-          <p>Visa inibir a ação de vandalismos, furto e tentativa de invasão patrimonial. <br><br>
-            OBS: Este serviço é mantido atraves de parcerias com orgãos publicos e empresas e doações.
+          <p><b>Visa inibir a ação de vandalismos, furto e tentativa de invasão patrimonial. <br><br>
+            OBS: Este serviço é mantido atraves de parcerias com orgãos publicos e empresas e doações.</b>
 
           </p>
           <button type="submit" class="btn btn-primary"  id="btn.camera">Assinar</button>
@@ -38,8 +38,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
             </div>
           </div>
         </div>
-        <p>Serviço de monitoramento de vigilância patrimonial. <br><br><br>
-          OBS: Este serviço é mantido atraves de parcerias com orgãos publicos e empresas e doações
+        <p><b>Serviço de monitoramento de vigilância patrimonial. <br><br><br>
+          OBS: Este serviço é mantido atraves de parcerias com orgãos publicos e empresas e doações</b>
 
         </p>
         <button type="submit" class="btn btn-primary" id="assinar">Assinar</button>
@@ -54,8 +54,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
             </div>
           </div>
         </div>
-        <p>Distribuição de banda larga somente para usuários cadastrados em nossa plataforma comunitária. <br><br><br>
-          OBS: Serviço gratuito para familias com cad-unico.
+        <p><b>Distribuição de banda larga somente para usuários cadastrados em nossa plataforma comunitária. <br><br><br>
+          **Serviço gratuito para familias com cad-unico.</b>
 
         </p>
 
@@ -70,8 +70,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
             </div>
           </div>
         </div>
-        <p>Manutenção e reparo de equipamentos de rede. teste de segurança dados, firewall,
-          anti-virus.roteadores e switcs.<br><br><br><br><br>
+        <p><b>Manutenção e reparo de equipamentos de rede. teste de segurança dados, firewall,
+          anti-virus.roteadores e switcs.<br><br><br><br><br></b>
 
         </p>
 
@@ -79,11 +79,11 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
 
       </div>
     </div>
-    <h3>Sabendo da grande dificuldade de acessibilidade a serviços com uso de tecnologia, 
+    <h3><b>Sabendo da grande dificuldade de acessibilidade a serviços com uso de tecnologia, 
       tais como acesso a internet, vigilancia e monitoramento patrimonial, 
       e reparo tecnico em dispositivos de rede. A BrainStorm tem como objetivo dispobilizar 
       serviços que visam aproximar a população mais carentes ao mundo da inovação, 
-      tecnologia e educação por meio da conectividade. </h3>
+      tecnologia e educação por meio da conectividade.</b> </h3>
   </div>
 
 
