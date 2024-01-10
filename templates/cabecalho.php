@@ -31,7 +31,7 @@ if (session_status() == PHP_SESSION_NONE) {
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
-            <a href="/projetocursoredes/index.php"><img src="/projetocursoredes/imgs/brainstormer.png" alt="" title="Brainstorming"><b>Brainstorming</b></a>
+            <a href="/projetocursoredes/index.php"><img src="/projetocursoredes/imgs/brainstormer.png" alt="" id="brainstorming" title="Brainstorming"><b>Brainstorming</b></a>
 <!--             <a class="navbar-brand"  href="/projetocursoredes/index.php">Brainstorming</a> -->            
               <form class="d-flex" role="search">
                 
@@ -45,6 +45,12 @@ if (session_status() == PHP_SESSION_NONE) {
       </header> 
       
 <style>
+  .container-fluid{
+    align-items: flex-end;
+
+  }
+
+
   .container-fluid img{
     display: flex;
     align-items: center;
@@ -56,9 +62,35 @@ if (session_status() == PHP_SESSION_NONE) {
     text-decoration: none;
     color: #000;
 
-
-
   }
 
 
+  @media (max-width: 600px) {
+    .container-fluid{
+      display: flex;
+      align-items: flex-end;
+      padding: 0;
+
+    }
+
+    .bg-body-tertiary{
+      align-items: flex-end;
+    }
+
+    .navbar-expand-lg{
+      align-items: flex-end;
+
+    }
+    .container-fluid a{
+      padding-bottom: 0;
+      align-items: center;
+
+    } 
+
+
+  
+
+  }
+
+ 
 </style>
