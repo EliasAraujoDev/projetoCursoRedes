@@ -55,7 +55,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
           </div>
         </div>
         <p><b>Distribuição de banda larga somente para usuários cadastrados em nossa plataforma comunitária. <br><br><br>
-          **Serviço gratuito para familias com cad-unico.</b>
+          **Serviço gratuito para familias com cad-único.</b>
 
         </p>
 
@@ -70,8 +70,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
             </div>
           </div>
         </div>
-        <p><b>Manutenção e reparo de equipamentos de rede. teste de segurança dados, firewall,
-          anti-virus.roteadores e switcs.<br><br><br><br><br></b>
+        <p><b>Manutenção e reparo de equipamentos de rede, teste de segurança dados, firewall,
+          anti-virus, roteadores e switcs.<br><br><br><br><br></b>
 
         </p>
 
@@ -81,7 +81,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
     </div>
     <h3><b>Sabendo da grande dificuldade de acessibilidade a serviços com uso de tecnologia, 
       tais como acesso a internet, vigilancia e monitoramento patrimonial, 
-      e reparo tecnico em dispositivos de rede. A BrainStorm tem como objetivo dispobilizar 
+      e reparo tecnico em dispositivos de rede. A Brainstorm tem como objetivo dispobilizar 
       serviços que visam aproximar a população mais carentes ao mundo da inovação, 
       tecnologia e educação por meio da conectividade.</b> </h3>
   </div>
