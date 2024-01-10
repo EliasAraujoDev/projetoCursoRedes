@@ -31,8 +31,8 @@ if (session_status() == PHP_SESSION_NONE) {
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
-            <a class="navbar-brand" href="/projetocursoredes/index.php">Brainstorming</a>
-            
+            <a href="/projetocursoredes/index.php"><img src="/projetocursoredes/imgs/brainstormer.png" alt="" title="Brainstorming"><b>Brainstorming</b></a>
+<!--             <a class="navbar-brand"  href="/projetocursoredes/index.php">Brainstorming</a> -->            
               <form class="d-flex" role="search">
                 
 <!--                 <a href="/projetocursoredes/views/doacoes.php"><button type="button" class="btn btn-light">Doações</button></a>-->   
@@ -44,3 +44,21 @@ if (session_status() == PHP_SESSION_NONE) {
         </nav>
       </header> 
       
+<style>
+  .container-fluid img{
+    display: flex;
+    align-items: center;
+    height: 35px;
+  }
+  .container-fluid a{
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    color: #000;
+
+
+
+  }
+
+
+</style>
