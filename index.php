@@ -71,7 +71,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projetocursoredes/templates/cabecalho
           </div>
         </div>
         <p><b>Manutenção e reparo de equipamentos de rede, teste de segurança dados, firewall,
-          anti-virus, roteadores e switcs.<br><br><br><br><br></b>
+          anti-virus, roteadores e switcs.<br><br><br><br></b>
 
         </p>
 
